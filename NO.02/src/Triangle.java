@@ -23,10 +23,12 @@ public void setS3(double s) {
 
 public void getAREA() {
 	
-	//ADDS ALL THE SUM OF THE TRIANGLE, USUALY CALLED SEMI-PERIMETER
-	//SEMI - PERIMETER = SUM OF THREE SIDE
-	double s = this.S1+this.S2+this.S3;	//S1+S2+S3
+	//ADDS ALL THE SUM OF THE TRIANGLE OVER 2, USUALY CALLED SEMI-PERIMETER
+	//SEMI - PERIMETER = SUM OF THREE SIDE DEVIDED BY 2
+	double s = (this.S1+this.S2+this.S3)/2;	//S1+S2+S3/2
 	
+	
+
 	//THIS PRINTS THE AREA OF THE TRIANGLE 
 	//USING THE FORMLA OF HERON'S FORMULA
 	//sqrt OF s(s-a)(s-b)(s-c),which s represent the "SEMI -PERIMETER"
@@ -34,7 +36,7 @@ public void getAREA() {
 	
 	//math.sqrt();  returns the correctly rounded positive square root of a double value given by the user
 	System.out.println("The area of the TRIANGLE IS:\n" +
-				Math.sqrt(s*(s-this.S1)*(s-this.S2)*(s-this.S3))
+				Math.sqrt((s)*(s-this.S1)*(s-this.S2)*(s-this.S3))
 	);
 }
 
